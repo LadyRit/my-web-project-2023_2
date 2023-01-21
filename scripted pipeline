@@ -8,9 +8,6 @@ stage('SCM Checkout') {
         sh "${mvnHome}/bin/mvn compile" 
     }
     stage('Test') {
-        sh "${mvnHome}/bin/mvn test" 
-    }
-    stage('deploy') { 
-        sh "${mvnHome}/bin/mvn deploy" 
+        sh "${mvnHome}/bin/mvn test"  
     }
 }
