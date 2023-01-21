@@ -12,3 +12,5 @@ stage('SCM Checkout') {
     }
     stage('deploy') { 
         sh "${mvnHome}/bin/mvn deploy" 
+    }
+}
