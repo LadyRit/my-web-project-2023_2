@@ -6,8 +6,8 @@ pipeline {
     stages {
         stage('SCM-Checkout') { 
             steps {
-				git branch: 'main', credentialsId: 'git-credentials', 
-				url: 'https://github.com/vikas99341/web-project-2023.git' 
+				 git branch: 'main', credentialsId: 'e15d36b6-61f4-4152-a5ab-91d079f26414', 
+				 url: 'https://github.com/LadyRit/web-project-2023.git'
             }
         }
         stage('Compile') { 
