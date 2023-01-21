@@ -10,5 +10,5 @@ stage('SCM Checkout') {
     stage('Test') {
         sh "${mvnHome}/bin/mvn test" 
     }
-    stage('package') { 
-        sh "${mvnHome}/bin/mvn package" 
+    stage('deploy') { 
+        sh "${mvnHome}/bin/mvn deploy" 
